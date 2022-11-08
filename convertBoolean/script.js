@@ -3,11 +3,12 @@ DESCRIPTION:
  Complete the method that takes a boolean value and
  return a "Yes" string for true, or a "No" string for false.
  */
-
 //1 way to
  function boolToWord1( bool ){
     return bool ? 'Yes':'No';
   }
+  console.log(boolToWord1("yes"));
+
   //2 way
   function boolToWord2( bool ){
     if (bool) {
@@ -41,3 +42,14 @@ function boolToWord6( bool ){
     return bool === true ? "Yes" : "No";
   }
   console.log(boolToWord6(true)); // === true
+
+
+  //7
+  function boolToWord7( bool ){
+    if(bool === true)
+    return 'Yes'
+    else
+    return 'No'
+    }
+    console.log(boolToWord7(true), 'Yes'); // yes yes
+    console.log(boolToWord7(false), 'No'); // no no
